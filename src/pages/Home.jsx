@@ -1,8 +1,19 @@
 import React, {useState} from 'react'
+import {Box} from '@mui/material'
+import Exercises from '../components/Exercises'
+import SearchExercises from '../components/SearchExercises'
+import HeroBanner from '../components/HeroBanner'
 
 function Home() {
   return (
-    <div>Home</div>
+    <Box>
+      {/* Hero Banner that shows on the top */}
+      <HeroBanner />
+      {/* A component where you can search up the exercises */}
+      <SearchExercises/>
+      {/* The different types of exercise components */}
+      <Exercises/>
+    </Box>
   )
 }
 
