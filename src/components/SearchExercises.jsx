@@ -27,13 +27,14 @@ const handleSearch = async () => {
       const exerciseData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', ExerciseOptions)
       
       // Filter the exercise we're searching
-      const searchedExercises = exerciseData.filter(exercise => {
+      const searchedExercises = exerciseData.filter(exercise => 
+
         // Able to search up not just name, but for equipment, what it targets, and the bodypart its for
         exercise.name.toLowerCase().includes(search)
         || exercise.equipment.toLowerCase().includes(search)
         || exercise.target.toLowerCase().includes(search)
         || exercise.bodyPart.toLowerCase().includes(search)
-      })
+      )
       
       setSearch('')
       setExercises(searchedExercises)
