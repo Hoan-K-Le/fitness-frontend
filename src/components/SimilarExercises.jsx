@@ -1,8 +1,11 @@
 import React from 'react'
+import {Box, Stack, Typography} from '@mui/material'
 
-function SimilarExercises() {
+function SimilarExercises({targetMuscleExercises, equipmentExercises}) {
   return (
-    <div>SimilarExercises</div>
+    <Box sx={{mt: {lg: '100px', sx: '0'}}}>
+        <Typography>Exercises that target the same muscle group</Typography>
+    </Box>
   )
 }
 
